@@ -13,6 +13,7 @@
 3. Requirements Definition
 
 3.1 Functional Requirements
+
 Data Categorization System
 • The system must categorize training questions based on topics such as programming languages, algorithms, AI ethics, and troubleshooting.
 
@@ -105,31 +106,51 @@ Integration & Compatibility
 • The system should support integration with cloud-based AI services for automated analysis.
 
 4. Assumptions and Validation Plan
+
    4.1 Assumptions
+
    • The client has the legal right to scrape and use publicly available data and understands compliance with web scraping policies.
+
    • AI developers prefer separate question-answer storage for better training model adjustments, reducing redundancy and enabling efficient data retrieval.
+
    • The client is open to integrating automated bias detection into their data pipeline, ensuring that the training data does not reinforce prejudices or systemic biases.
+
    • The dataset is continuously growing and will need frequent updates, requiring a scalable solution that can handle increasing volumes of data efficiently.
+
    • The AI model's performance is directly influenced by the structure and balance of the dataset, emphasizing the need for continuous quality checks.
 
 4.2 Validation Plan
+
 • Client Collaboration: Conduct regular meetings with the client to ensure that categorized data format aligns with their business and technical requirements.
+
 • AI Model Performance Testing: Run sample AI models on both raw and processed data to measure improvements in model accuracy, bias reduction, and response consistency.
+
 • Bias Detection Review: Perform manual reviews of flagged biased data to assess the effectiveness of the bias detection system. If bias detection algorithms yield false positives or false negatives, iterative improvements will be made.
+
 • API Usability Testing: Gather feedback from developers using the API to ensure it meets usability, efficiency, and integration requirements.
+
 • Scalability and Performance Benchmarking: Evaluate system performance by stress-testing data retrieval speeds and concurrent user handling capacity.
+
 • Security Audits: Conduct periodic security assessments to confirm encryption strength and access control measures align with best practices and legal compliance.
 
 5. Implementation Tasks
 
 1 . Web Scraping Module: Develop a script to scrape publicly available training questions and answers.
+
 2 . Data Categorization System: Implement a method to classify questions into categories.
+
 3 . Database Design: Design a database schema for structured storage.
+
 4 . Bias Detection Mechanism: Develop an algorithm to detect and flag biases in the dataset.
+
 5 . API Development: Create an API for developers to access and manage training data.
+
 6 . Security Implementation: Ensure user authentication and secure data storage.
+
 7 . Testing & Validation: Perform tests to ensure data quality and system functionality.
+
 8 . Deployment & Client Review: Deploy the system and collect feedback from the client.
 
 6 . Conclusion
+
 This document presents a refined set of requirements addressing the client's key concerns regarding AI training data. By implementing these functional and system requirements, the system will ensure well-structured, unbiased, and efficiently categorized training data, leading to improved AI models. Further refinement can be done in collaboration with the client as development progresses.
