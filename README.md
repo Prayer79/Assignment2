@@ -63,3 +63,11 @@ Integration & Compatibility
 • The system must provide an API for integration with existing AI model training workflows.
 • The system must be compatible with common data formats (CSV, JSON, XML) for easy import/export.
 • The system should support integration with cloud-based AI services for automated analysis.
+
+4. Assumptions and Validation Plan
+   4.1 Assumptions
+   • The client has the legal right to scrape and use publicly available data and understands compliance with web scraping policies.
+   • AI developers prefer separate question-answer storage for better training model adjustments, reducing redundancy and enabling efficient data retrieval.
+   • The client is open to integrating automated bias detection into their data pipeline, ensuring that the training data does not reinforce prejudices or systemic biases.
+   • The dataset is continuously growing and will need frequent updates, requiring a scalable solution that can handle increasing volumes of data efficiently.
+   • The AI model's performance is directly influenced by the structure and balance of the dataset, emphasizing the need for continuous quality checks.
