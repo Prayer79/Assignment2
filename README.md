@@ -40,3 +40,26 @@ Web Scraping Data Processing
 • The system must validate and clean scraped data before storing it in the database.
 • Developers should be able to manually review and edit scraped data before it is finalized.
 • The system must prevent duplicate questions from being stored.
+
+3.2 System Requirements
+
+Web Scraping Framework
+• The system should use an efficient web scraping tool (e.g., Scrapy, BeautifulSoup) that ensures compliance with website terms of service.
+Database Management System
+• A structured database (e.g., PostgreSQL, MongoDB) should be used to store categorized questions and answers separately.
+• The system must use a scalable database to handle large volumes of categorized training data.
+• The system must perform automatic daily backups to prevent data loss.
+• The system must support version control for training datasets to allow rollback when needed.
+Scalability & Performance
+• The system should support processing at least 100,000 new training questions per day.
+• Data retrieval operations must not exceed 2 seconds for a standard query.
+• The system should support concurrent access by at least 500 users without performance degradation.
+Security & Compliance
+• The system must encrypt stored user credentials and sensitive data.
+• The system must follow data privacy regulations, including GDPR and CCPA compliance.
+• Only authenticated users should have access to sensitive AI training data.
+• Implement safeguards against unauthorized access to training data.
+Integration & Compatibility
+• The system must provide an API for integration with existing AI model training workflows.
+• The system must be compatible with common data formats (CSV, JSON, XML) for easy import/export.
+• The system should support integration with cloud-based AI services for automated analysis.
